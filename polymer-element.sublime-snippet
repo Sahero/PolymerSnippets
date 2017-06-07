@@ -28,9 +28,10 @@ Example:
 		$0
 	</template>
 	<script>
-		Polymer({
-			is: '$2'
-		});
+		class $3 extends Polymer.Element {
+			static get is() {return "$2";}
+		}		
+		window.customElements.define($3.is, $3);
 	</script>
 </dom-module>
 ]]></content>
